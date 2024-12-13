@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.footer-text {
+    font-size: 0.75rem;
+}
+
+footer .container {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .social-links a {
+    margin-right: 10px;
+}
+
+.imagen-fondo {
+    background-image: url('motoclub1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.form-container {
+    position: relative;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.btn-primary {
+    background-color: #FFC451;
+    border-color: #FFC451;
+}
+
+.btn-primary:hover {
+    background-color: #ffb04b;
+}
+
+.text-center a {
+    color: #FFC451;
+    text-decoration: none;
+}
+
+.text-center a:hover {
+    text-decoration: underline;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #333;
+}
+
+.header-links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-links a:hover {
+    text-decoration: underline;
+}
+
+.header-container .col-auto {
+    margin-left: 15px;
+}
+
+.login-links a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #FFC451;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    flex-grow: 1;
+}
+
+.login-links a:hover {
+    text-decoration: underline;
+}
+
+.login-links .create-account a {
+    background-color: #555;
+}
+
+.login-links .login a {
+    background-color: #FFC451;
+}
+
+.login-links .login a:hover {
+    background-color: #ffb04b;
+}

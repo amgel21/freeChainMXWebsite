@@ -1,0 +1,120 @@
+/* Estilos generales */
+body {
+    background-color: #f8f9fa; /* bg-light */
+    color: #212529; /* text-dark */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Encabezado */
+  header {
+    background-color: #343a40; /* bg-dark */
+    color: #fff; /* text-white */
+    padding: 10px 0;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header nav a {
+    color: #fff; /* text-white */
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 16px;
+  }
+  
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  header .dropdown button {
+    background-color: #6c757d; /* btn-secondary */
+    border: none;
+    color: #fff;
+  }
+  
+  /* Perfil */
+  .header-profile {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .header-profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  /* Contenido principal */
+  main {
+    padding: 50px 0;
+  }
+  
+  main h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  main p {
+    color: #6c757d; /* text-muted */
+  }
+  
+  .card {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .btn-agregar {
+    background-color: #007bff; /* btn-primary */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  
+  .btn-agregar:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #343a40; /* bg-dark */
+    color: rgba(255, 255, 255, 0.75); /* text-white text-opacity-75 */
+    padding: 20px 0;
+  }
+  
+  footer h5 {
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  footer a {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  footer .text-center p {
+    margin: 5px 0;
+  }
+  
