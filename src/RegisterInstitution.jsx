@@ -3,53 +3,36 @@ import './RegisterInstitution.css';
 import Navbar from './components/Navbar.jsx'; 
 import Footer from './components/Footer.jsx'; 
 
-const RegisterInstitution = () => (
-  <>
-    <Navbar /> {}
-
-    <RegistrationForm />
-
-    <Footer /> {}
-  </>
-);
-
-const RegistrationForm = () => (
-  <div className="imagen-fondo">
-    <div className="form-container">
-      <h2>Formulario de Registro</h2>
-      <form id="registrationForm" onSubmit={(e) => {
-        e.preventDefault();
-        alert('Formulario guardado correctamente');
-      }}>
-        <div className="mb-3">
-          <label htmlFor="organization-type" className="form-label">Tipo de Organización</label>
-          <select id="organization-type" name="organization-type" className="form-select" required>
-            <option value="">Seleccionar tipo</option>
-            <option value="motoclub">Motoclub</option>
-            <option value="independiente">Independiente</option>
-            <option value="motogrupo">Moto Grupo</option>
-          </select>
-        </div>
-        <div className="mb-3">
-          <label htmlFor="user-id" className="form-label">ID de Usuario</label>
-          <input type="text" id="user-id" name="user-id" className="form-control" required />
-        </div>
-        <div className="mb-3">
-          <label htmlFor="email" className="form-label">Correo Electrónico</label>
-          <input type="email" id="email" name="email" className="form-control" required />
-        </div>
-        <div className="mb-3">
-          <label htmlFor="file-upload" className="form-label">Seleccionar archivo</label>
-          <input type="file" id="file-upload" name="file-upload" className="form-control" required />
-        </div>
-        <div className="mb-3">
-          <label htmlFor="organization-name" className="form-label">Nombre de la Organización</label>
-          <input type="text" id="organization-name" name="organization-name" className="form-control" required />
-        </div>
-        <button type="submit" className="btn btn-primary w-100">Guardar</button>
-      </form>
+const ServiceCard = ({ link, title, description }) => (
+  <div className="col-md-4 mb-4">
+    <div className="service-card">
+      <a href={link}>{title}</a>
+      <p>{description}</p>
     </div>
   </div>
 );
 
-export default RegisterInstitution;
+const Services = () => (
+  <div className="container mt-5 content">
+    <h2 className="services-title text-center mb-4">Nuestros Servicios</h2>
+    <div className="row mt-4">
+      <ServiceCard link="MotoClubs.html" title="Moto Clubs" description="Registra y edita tu moto club, moto grupo, o si eres independiente." />
+      <ServiceCard link="Localisasion.html" title="Localizador" description="Rastrea la ubicación de un moto club, un moto grupo o de un usuario independiente." />
+      <ServiceCard link="Emergencia.html" title="Emergencia" description="Reporta una emergencia, para que los usuarios más cercanos puedan ayudarte." />
+      <ServiceCard link="Motos.html" title="Moto" description="Registra tu moto." />
+      <ServiceCard link="Mercado.html" title="Mercado" description="Compra y venta de motos entre la comunidad." />
+      <ServiceCard link="Eventos.html" title="Eventos" description="Organiza o participa en eventos de la comunidad." />
+    </div>
+  </div>
+);
+
+const Servicios = () => (
+  <>
+    <Navbar />
+    <div className="imagen-fondo"></div>
+    <Services />
+    <Footer />
+  </>
+);
+
+export default Servicios;

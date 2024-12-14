@@ -18,11 +18,11 @@ const Events = () => {
       <main className="contenido container py-5">
         <h1 className="text-center text-uppercase">Eventos 2024</h1>
         <section className="container-events">
-          <button className="btn btn-crear-evento" id="btnCrearEvento" onClick={() => setShowForm(true)}>Crear Evento</button>
+          <button className="btn btn-crear-evento" onClick={() => setShowForm(true)}>Crear Evento</button>
           {showForm && (
-            <div className="formulario-evento" id="formularioEvento">
+            <div className="formulario-evento">
               <h3>Crear Evento</h3>
-              <form id="eventoForm">
+              <form>
                 {}
               </form>
             </div>

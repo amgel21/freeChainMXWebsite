@@ -7,7 +7,7 @@ import Footer from './components/Footer.jsx';
 const LocalSesion = () => {
     return (
         <div className="bg-light">
-            <Navbar /> {}
+            <Navbar />
 
             <main className="contenido container my-4">
                 <h2 className="text-uppercase fw-bold">Localizar</h2>
@@ -67,7 +67,7 @@ const LocalSesion = () => {
                 </div>
             </main>
 
-            <Footer /> {}
+            <Footer />
         </div>
     );
 };

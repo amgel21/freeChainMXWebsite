@@ -11,7 +11,9 @@ const RegisterUser = () => {
             <Navbar />
 
             <div className="imagen-fondo"></div>
-            {step === 1 ? <FirstForm onNext={() => setStep(2)} /> : <SecondForm />}
+            <div className="container">
+                {step === 1 ? <FirstForm onNext={() => setStep(2)} /> : <SecondForm />}
+            </div>
             <Footer />
         </>
     );

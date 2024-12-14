@@ -32,7 +32,7 @@ const Bikes = () => {
 
   return (
     <div className="bg-light text-dark">
-      <Navbar /> {}
+      <Navbar />
 
       <main className="contenido container py-5">
         <h1 className="text-center text-uppercase">Motos</h1>
@@ -127,7 +127,7 @@ const Bikes = () => {
         </div>
       </div>
 
-      <Footer /> {}
+      <Footer />
     </div>
   );
 };

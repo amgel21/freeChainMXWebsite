@@ -5,11 +5,11 @@ import Footer from './components/Footer.jsx';
 
 const Profile = () => (
   <>
-    <Navbar /> {}
+    <Navbar />
     
     <MainContent />
     
-    <Footer /> {}
+    <Footer />
   </>
 );
 
