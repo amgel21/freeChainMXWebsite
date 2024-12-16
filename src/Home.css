@@ -33,6 +33,7 @@ footer .container {
 footer .row {
     display: flex;
     justify-content: space-between;
+    
 }
 
 footer .social-links a {

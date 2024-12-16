@@ -22,6 +22,8 @@ footer .container {
 footer .row {
     display: flex;
     justify-content: space-between;
+    width: 100%; 
+    padding: 0 15px
 }
 
 footer .social-links a {
