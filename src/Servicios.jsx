@@ -16,12 +16,12 @@ const Services = () => (
   <div className="container-fluid mt-5 content"> {}
     <h2 className="services-title text-center mb-4">Nuestros Servicios</h2>
     <div className="row mt-4 justify-content-center"> {}
-      <ServiceCard link="RegisterInstitution.jsx" title="Moto Clubs" description="Registra y edita tu moto club, moto grupo, o si eres independiente." />
+      <ServiceCard link="RegisterInstitution" title="Moto Clubs" description="Registra y edita tu moto club, moto grupo, o si eres independiente." />
       <ServiceCard link="Localisasion.html" title="Localizador" description="Rastrea la ubicación de un moto club, un moto grupo o de un usuario independiente." />
       <ServiceCard link="Emergencia.html" title="Emergencia" description="Reporta una emergencia, para que los usuarios más cercanos puedan ayudarte." />
-      <ServiceCard link="Bikes.jsx" title="Moto" description="Registra tu moto." />
-      <ServiceCard link="Market.jsx" title="Mercado" description="Compra y venta de motos entre la comunidad." />
-      <ServiceCard link="Events.jsx" title="Eventos" description="Organiza o participa en eventos de la comunidad." />
+      <ServiceCard link="Bikes" title="Moto" description="Registra tu moto." />
+      <ServiceCard link="Market" title="Mercado" description="Compra y venta de motos entre la comunidad." />
+      <ServiceCard link="Events" title="Eventos" description="Organiza o participa en eventos de la comunidad." />
     </div>
   </div>
 );
